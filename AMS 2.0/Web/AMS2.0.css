@@ -1,0 +1,127 @@
+*{
+ margin:0;
+ padding:0;
+ font-weight: bold;
+}
+
+.bgcolor{
+	background-color: transparent;
+}
+
+.Record_box{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 50%;
+}
+
+.Record_box2{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 35%;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+	border-color: transparent;
+	align-items: center;
+	justify-content: space-around;
+	height: 80%;
+}
+
+.flex1{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	border-color: transparent;
+	height: 80%;
+}
+
+.Dates{
+	display:flex;
+}
+
+.Add_record, .Attendance, .Delete_record{
+	width: 30%;
+}
+
+.Add_record, .Attendance, .Delete_record, .Leave_record, .Generate_record{
+	border: solid #000 2px;
+}
+
+.Leave_record, .Generate_record{
+	width: 40%;
+}
+
+.Add_record h1, .Attendance h1, .Delete_record h1, .Leave_record h1, .Generate_record h1{
+  color: #fff;
+  background: #332d6b;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+legend{
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+input{
+  margin: 5px;
+  width: 50%;
+}
+
+span{
+ color: red;
+ text-align: center;
+}
+
+p{
+ padding: 5px;
+}
+
+label{
+ margin-top: 5px;
+}
+
+.submit{
+ margin: 10px;
+ width: 40%;
+ font-weight: bold;
+ background: #F58A7B;
+ color: #fff;
+}
+
+.submit:hover{
+ background: #7DFA79;
+ font-size: 0.8em;
+ color: #000;
+}
+
+@media only screen and (max-width:800px){
+ 
+.Record_box{
+	flex-direction: column;
+	height: auto;
+}
+
+.Record_box2{
+	flex-direction: column;
+	height: auto;
+}
+
+
+
+.Add_record, .Attendance, .Delete_record, .Leave_record, .Generate_record{
+	width: 80%;
+	margin: 50px;
+}
+
+
+
+}

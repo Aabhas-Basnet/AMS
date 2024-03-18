@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>AMS 2.0</title>
+<link rel="shortcut icon" type="x-icon" href="Images/LOGO.png">
+<link rel="stylesheet" href="AMS2.0.css">
+<script src="eel.js"></script>
+</head>
+
+<body>
+
+<div class="Heading_flex">
+<img src="Images/Attendance_Image.jpg" width="100%" height="100px">
+</div>
+
+<div class="Record_box">
+
+<div class = "Add_record">
+ <h1>ADD RECORD</h1>
+
+<form action=""  id="Addrecord">
+ <fieldset class="flex">
+  <legend>USER INFORMATION:</legend>
+  
+  <label for="fname" class="bgcolor">FULL NAME</label>
+  <input type="text" id="fname" name="fname" required autocomplete="off">
+  
+  <label for="uid" class="bgcolor">IDENTIFICATION NO.</label>
+  <input type="text" id="uid" name="uid" required autocomplete="off">
+  
+  <label for="faculty" class="bgcolor">FACULTY</label>
+  <input type="text" id="faculty" name="faculty" value="CSIT" required autocomplete="off">
+  
+  <label for="Batch" class="bgcolor">BATCH</label>
+  <input type="text" id="Batch" name="Batch" value="2023" required autocomplete="off">
+  
+  <input type="submit" value="ADD RECORD" class="submit" id="add" onClick="Add_record()">
+ </fieldset>
+</form>
+</div>
+
+<div class="Attendance">
+<h1>ATTENDANCE</h1>
+
+<form action=""  id="Attendance-form">
+ <fieldset class="flex">
+   <legend>CHECK ATTENDANCE:</legend><br>
+   <img src="Images/Computer.png" width="45%" style="background:transparent;"><br>
+  
+  <input type="submit" value="CHECK ATTENDANCE !" class="submit" id="attendance" onClick="Add_attendance()">
+ </fieldset>
+</form>
+</div>
+
+<div class="Delete_record">
+<h1>DELETE RECORD</h1>
+<form action=""  id="Deleterecord">
+ <fieldset class="flex">
+  <legend>DELETE INFORMATION:</legend>
+  <label for="uid" class="bgcolor">IDENTIFICATION NO.</label>
+  <input type="text" id="uid1" name="uid1" required autocomplete="off">
+  
+  <input type="submit" value="DELETE RECORD" class="submit" id="del" onClick="Del_record()">
+ </fieldset>
+</form>
+</div>
+</div>
+
+<div class="Record_box2">
+
+<div class = "Leave_record">
+ <h1>ADD LEAVE</h1>
+ 
+ <form action="" id="Leave-form">
+ <fieldset class="flex1">
+  <legend>USER INFORMATION:</legend>
+  
+  <label for="uid" class="bgcolor">IDENTIFICATION NO.</label>
+  <input type="text" id="uid2" name="uid" required autocomplete="off">
+  
+  <div class="Dates">
+
+  <label for="dates" class="bgcolor">FROM:</label>  
+  <input type="date" id="from_dates" name="dates" required autocomplete="off">
+  
+
+   <label for="dates" class="bgcolor">TO:</label>  
+  <input type="date" id="to_dates" name="dates"  autocomplete="off">
+  </div>
+  
+    <input type="submit" value="ADD LEAVE" class="submit" id="Leave" onClick="Add_Leave()">
+ </fieldset>
+</form>
+</div>
+
+<div class = "Generate_record">
+ <h1>GENERATE ATTENDANCE</h1>
+ 
+ <form action="" id="Attendance-form">
+ <fieldset class="flex1">
+  <legend>BATCH INFORMATION:</legend>
+
+  <label for="faculty" class="bgcolor">FACULTY</label>
+  <input type="text" id="faculty2" name="faculty" value="CSIT" required autocomplete="off">
+  
+  <label for="Batch" class="bgcolor">BATCH</label>
+  <input type="text" id="Batch2" name="Batch" value="2023" required autocomplete="off"><br><br>
+  
+  <div class="Dates">
+  <label for="dates" class="bgcolor">FROM:</label>  
+  <input type="date" id="from_dates1" name="dates" required autocomplete="off">
+  
+   <label for="dates" class="bgcolor">TO:</label>  
+  <input type="date" id="to_dates1" name="dates"  autocomplete="off">
+  </div>
+  
+   <input type="submit" value="GENERATE ATTENDANCE" class="submit" id="Generate" onClick="Generate_record()">
+ </fieldset>
+</form>
+</div>
+
+</div>
+</body>
+
+<script type="text/javascript" src="AMS2.0.js"></script>
+
+<script>
+  eel.expose(Message);
+  function Message(Message){
+    alert(Message);
+    }
+ 
+</script>
+
+
